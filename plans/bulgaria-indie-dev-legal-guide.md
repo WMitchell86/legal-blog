@@ -1744,4 +1744,274 @@ The only change is in your legal footer and internal accounting.
 
 ---
 
+## 19. DEEP DIVE — DAC7: Does Lemon Squeezy (US/Stripe) or Paddle (UK) Actually Report Your Income to НАП?
+
+> **The short answer:** Lemon Squeezy/Stripe almost certainly reports your income to EU tax authorities (via Ireland). Paddle's reporting status is genuinely uncertain due to the UK's post-Brexit position. Neither platform is a safe harbor from НАП discovering your income. Here is the full legal analysis.
+
+---
+
+### 19.1 What is DAC7?
+
+**EU Council Directive 2021/514** (commonly called "DAC7") amends the EU Directive on Administrative Cooperation in Taxation (2011/16/EU). It was adopted in March 2021 and required EU member states to implement it by January 1, 2023.
+
+**What DAC7 does:**
+- Requires "platform operators" (digital marketplaces, app stores, gig economy platforms, software distribution platforms) to **collect, verify, and report** information about sellers/vendors who earn income through their platform
+- The platform reports to the tax authority of the EU member state where it is registered
+- That tax authority then **automatically shares the data** with the tax authorities of all other EU member states where the sellers are resident
+- **Result:** НАП receives a report about your income from Lemon Squeezy/Paddle without you doing anything
+
+**What information is reported:**
+- Your full name
+- Your primary address
+- Your tax identification number (Bulgarian EGN or BULSTAT)
+- Your date of birth (for natural persons)
+- Your bank account number (where payouts are sent)
+- Total consideration paid to you per quarter
+- Number of transactions
+
+**Reporting timeline:**
+- Platforms report annually, by January 31 of the following year
+- First reporting period: calendar year 2023 (reported by January 31, 2024)
+- НАП receives the data and can cross-reference with your tax return
+
+---
+
+### 19.2 Does DAC7 Apply to Non-EU Platforms?
+
+**This is the critical question for Lemon Squeezy (US) and Paddle (UK).**
+
+**The DAC7 scope rule:**
+
+DAC7 applies to "platform operators" defined as any entity that:
+1. Contracts with sellers to make available all or part of a platform, AND
+2. The platform facilitates the carrying out of "relevant activities" (which includes selling software licenses)
+
+**The geographic scope:**
+
+| Platform type | DAC7 obligation |
+|---|---|
+| EU-resident platform (incorporated or managed in EU) | Must report in their EU member state |
+| Non-EU platform with EU sellers OR EU buyers | Must register in ONE EU member state and report there |
+| Non-EU platform from a "qualifying" country with equivalent rules | May be exempt if home country rules are deemed equivalent |
+
+**The "equivalent third country" exemption (Article 8ac(7) DAC7):**
+- A non-EU platform can be exempt from EU DAC7 registration IF:
+  1. Their home country has "equivalent" reporting rules, AND
+  2. The EU Commission has formally recognized those rules as equivalent, AND
+  3. The platform actually reports under those home country rules
+
+---
+
+### 19.3 Lemon Squeezy / Stripe — US-Based Analysis
+
+**Corporate structure:**
+- Lemon Squeezy LLC was a US company (Delaware)
+- Acquired by Stripe, Inc. in 2024
+- Stripe, Inc. is a US company (Delaware)
+- **However:** Stripe has a major EU subsidiary: **Stripe Payments Europe, Ltd.** (incorporated in Ireland)
+- Stripe's EU operations are run through the Irish entity
+
+**Does the US have "equivalent" DAC7 rules?**
+- **No.** The US has FATCA (Foreign Account Tax Compliance Act) and FBAR, but these cover financial accounts, not platform income reporting
+- The US does not have a DAC7-equivalent regime for platform operators
+- The EU Commission has NOT recognized the US as a qualifying country for the DAC7 exemption
+
+**What this means for Lemon Squeezy/Stripe:**
+- Stripe cannot claim the "equivalent third country" exemption
+- Stripe MUST register in an EU member state and report under DAC7
+- Stripe has registered in **Ireland** (where Stripe Payments Europe, Ltd. is based)
+- Stripe reports EU seller income to the **Irish Revenue Commissioners**
+- Irish Revenue then shares this data with **НАП (Bulgaria)** under the automatic exchange mechanism
+
+**Practical conclusion for Lemon Squeezy:**
+- ✅ **Lemon Squeezy/Stripe IS subject to DAC7**
+- ✅ **Your income from Lemon Squeezy IS being reported to НАП** (via Ireland)
+- ✅ **НАП has your name, address, EGN/BULSTAT, bank account, and income amount**
+- ✅ **This reporting started for 2023 income** (reported January 2024)
+
+**One nuance:** Lemon Squeezy may report under Stripe's DAC7 registration (since the acquisition). The exact reporting entity may be Stripe Payments Europe, Ltd. rather than "Lemon Squeezy" specifically. But the data flows to НАП either way.
+
+---
+
+### 19.4 Paddle — UK-Based Analysis
+
+**Corporate structure:**
+- Paddle.com Market Ltd — incorporated in **England and Wales** (UK)
+- Paddle is NOT an EU company
+- Paddle has no major EU subsidiary (unlike Stripe)
+- Paddle operates from the UK
+
+**Does the UK have "equivalent" DAC7 rules?**
+
+**The UK's position is complex and evolving:**
+
+The UK implemented its own equivalent reporting rules: **The Platform Operators (Due Diligence and Reporting Requirements) Regulations 2023** (SI 2023/817), which came into force on **January 1, 2024**.
+
+These UK rules are modeled on DAC7 and require UK-based platforms to report seller income to **HMRC (UK tax authority)**.
+
+**The EU-UK equivalence question:**
+- For Paddle to be exempt from EU DAC7 registration, the EU Commission must formally recognize UK rules as "equivalent"
+- As of early 2026, the EU Commission has **not yet issued a formal equivalence decision** for the UK
+- This is a post-Brexit complication — the UK is no longer in the EU, and equivalence decisions take time
+
+**Three possible scenarios for Paddle:**
+
+**Scenario A — EU Commission grants UK equivalence (most likely eventually):**
+- Paddle reports to HMRC under UK rules
+- HMRC shares data with EU tax authorities (including НАП) under a separate UK-EU tax information exchange agreement
+- Your income reaches НАП, but via a different route (UK-EU exchange, not DAC7 directly)
+
+**Scenario B — EU Commission has NOT granted equivalence (current situation as of early 2026):**
+- Paddle must register in an EU member state and report under DAC7
+- Paddle may have registered in Ireland, Netherlands, or another EU state
+- OR Paddle may be non-compliant (not yet registered) — this is a risk for Paddle, not for you
+
+**Scenario C — Paddle is non-compliant with DAC7:**
+- Paddle has not registered in the EU
+- Your income is NOT being reported to НАП via DAC7
+- However, НАП can still discover your income through other means (bank records, your own declaration, etc.)
+
+**What Paddle actually says:**
+- Paddle's documentation acknowledges DAC7 obligations
+- Paddle has stated they comply with applicable reporting requirements
+- Paddle likely registered in an EU member state (most likely Ireland or Netherlands) to cover EU sellers
+
+**Practical conclusion for Paddle:**
+- ⚠️ **Paddle's DAC7 reporting status is less certain than Stripe/Lemon Squeezy**
+- ⚠️ **Paddle likely reports your income to EU authorities, but the exact mechanism is unclear**
+- ⚠️ **Even if Paddle doesn't report via DAC7, UK-EU tax information exchange may still result in НАП receiving data**
+- ✅ **Assume your income IS being reported — do not rely on Paddle's uncertainty as a reason not to declare**
+
+---
+
+### 19.5 The Information Exchange Chain — How НАП Gets the Data
+
+```
+Lemon Squeezy/Stripe (US operations)
+    ↓ reports to
+Stripe Payments Europe Ltd (Ireland)
+    ↓ files DAC7 report with
+Irish Revenue Commissioners
+    ↓ automatic exchange under DAC7/EU Directive
+НАП (Bulgaria)
+    ↓ cross-references with
+Your Bulgarian tax return
+```
+
+```
+Paddle (UK)
+    ↓ reports to (under UK DAC7 equivalent)
+HMRC (UK)
+    ↓ exchange under UK-EU Tax Information Exchange Agreement
+НАП (Bulgaria)
+    [OR]
+Paddle (UK)
+    ↓ registers in EU member state (e.g., Ireland)
+    ↓ files DAC7 report with
+Irish/Dutch Revenue
+    ↓ automatic exchange
+НАП (Bulgaria)
+```
+
+**Timeline:**
+- Platforms collect data throughout the year
+- Report to their home/registered tax authority by **January 31** of the following year
+- Tax authorities exchange data within **2 months** (by March 31)
+- НАП has the data before the Bulgarian tax return deadline (April 30)
+- **НАП can compare your declared income against the DAC7 report before you even file**
+
+---
+
+### 19.6 What НАП Does With DAC7 Data
+
+**НАП's process:**
+1. Receive DAC7 data from EU partner authorities (including Irish Revenue for Stripe/Lemon Squeezy)
+2. Match the data against Bulgarian tax identification numbers (EGN or BULSTAT)
+3. Cross-reference with filed tax returns
+4. If income is declared: no action (or minor verification)
+5. If income is NOT declared: issue a notice requesting explanation
+
+**НАП's matching capability:**
+- НАП matches by EGN (personal ID number) or BULSTAT
+- If you provided your EGN to Lemon Squeezy/Paddle (required for tax purposes), НАП can match you
+- If you provided a foreign address or fake details, НАП may not match immediately — but this is tax fraud
+
+**What if you didn't provide your EGN to the platform?**
+- Lemon Squeezy/Paddle are required to collect and verify your tax identification number
+- If you refuse to provide it, they may withhold payouts or close your account
+- Providing false information is a separate legal offense
+
+---
+
+### 19.7 DAC7 and the "Natural Person" Phase — Does It Apply?
+
+**Yes, DAC7 applies regardless of your legal status.**
+
+DAC7 covers "sellers" — defined as any person (natural or legal) who uses the platform to sell. There is no minimum threshold below which reporting is not required.
+
+**However, there is a de minimis exception:**
+- Platforms are NOT required to report sellers who:
+  - Had fewer than **30 transactions** in the year, AND
+  - Received less than **€2,000** in total consideration
+
+**What this means for you:**
+- If you have fewer than 30 sales AND less than €2,000 in a year: Lemon Squeezy/Paddle may not report you
+- If you exceed either threshold: they MUST report you
+- **At $300/sale, you hit the €2,000 threshold at approximately 7 sales**
+
+**Practical implication:**
+- In your very first year with only 3 sales ($900): you may be below the reporting threshold
+- From year 2 onwards with consistent sales: you are almost certainly above the threshold and WILL be reported
+
+---
+
+### 19.8 The "Paddle is UK, Not EU" Argument — Does It Help You?
+
+**Some people argue:** "Paddle is UK-based, not EU. DAC7 is an EU directive. Therefore Paddle doesn't have to report to EU authorities."
+
+**This argument is WRONG for two reasons:**
+
+**Reason 1 — DAC7 explicitly covers non-EU platforms:**
+DAC7 Article 8ac(1) states that the reporting obligation applies to platform operators "regardless of where they are established." Non-EU platforms with EU sellers must register in the EU and report.
+
+**Reason 2 — UK-EU tax information exchange:**
+Even if Paddle reports only to HMRC (under UK rules), the UK and EU have a Tax Information Exchange Agreement (TIEA) and the UK is a signatory to the OECD Common Reporting Standard (CRS). HMRC shares financial information with EU tax authorities, including НАП.
+
+**The bottom line:** Whether Paddle reports via DAC7 directly or via UK-EU exchange, the information can reach НАП. The route is different; the destination is the same.
+
+---
+
+### 19.9 Practical Implications — What You Should Do
+
+**Given DAC7 reporting:**
+
+1. **Always declare your income** — НАП will have the data. Non-declaration is easily detected.
+
+2. **Provide accurate tax information to your MoR** — Give Lemon Squeezy/Paddle your correct EGN or BULSTAT. This is legally required and ensures the DAC7 report matches your tax return.
+
+3. **Declare in the same year the income is received** — DAC7 reports are annual. If you receive income in 2024, it will be reported in January 2025. Your 2024 tax return (due April 30, 2025) must include this income.
+
+4. **The de minimis exception is not a strategy** — Do not deliberately keep sales below 30 transactions or €2,000 to avoid reporting. This is artificial behavior that НАП can challenge.
+
+5. **DAC7 does NOT change your tax obligations** — It only changes НАП's ability to discover undeclared income. Your tax obligations are the same whether or not DAC7 exists.
+
+6. **DAC7 actually helps honest taxpayers** — If you declare correctly, DAC7 data confirms your declaration. НАП is less likely to audit you if your return matches the DAC7 report.
+
+---
+
+### 19.10 Summary Table — DAC7 Reporting by Platform
+
+| Platform | Jurisdiction | DAC7 Status | Reports to | НАП Receives Data? |
+|---|---|---|---|---|
+| Lemon Squeezy (pre-Stripe) | US (Delaware) | Must register in EU | Irish Revenue (via Stripe EU) | Yes — high confidence |
+| Lemon Squeezy (post-Stripe acquisition) | US (via Stripe) | Reports via Stripe Payments Europe Ltd | Irish Revenue | Yes — high confidence |
+| Paddle | UK (England and Wales) | Must register in EU OR qualify for UK equivalence exemption | Irish/Dutch Revenue OR HMRC | Yes — medium-high confidence |
+| Stripe (direct) | US (via EU entity) | Reports via Stripe Payments Europe Ltd | Irish Revenue | Yes — high confidence |
+| Gumroad | US | Must register in EU | Unknown EU member state | Likely yes |
+| PayPal | US/Luxembourg | Reports via PayPal Europe S.a.r.l. (Luxembourg) | Luxembourg Revenue | Yes — high confidence |
+
+**Key takeaway:** There is no major payment platform or MoR that is outside the DAC7 reporting net. Assume all income from these platforms is reported to НАП.
+
+---
+
 *Last updated: February 2026. Tax laws change frequently. Verify all figures with current НАП guidelines.*
