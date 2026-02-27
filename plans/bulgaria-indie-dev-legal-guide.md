@@ -1047,4 +1047,701 @@ If you have a full-time job in Bulgaria:
 
 ---
 
+## 16. COMPREHENSIVE DEFENSIBLE STRATEGY — Traffic-Light Risk Classification
+
+> This section synthesizes everything in the guide, fills gaps not covered elsewhere, and gives you a clear GREEN / AMBER / RED classification for every decision point. It also covers what to do with your website, domain, bank account, and MoR when transitioning between phases.
+
+---
+
+### 16.1 The Master Traffic-Light Table
+
+| Decision / Action | Risk Level | Classification | Notes |
+|---|---|---|---|
+| Use Lemon Squeezy as MoR, no other paid foreign services | 🟢 GREEN | OK | Reseller model; no service received |
+| Use Paddle as MoR, no other paid foreign services | 🟢 GREEN | OK | Same as above; slightly stronger docs |
+| Stay on all free tiers (Cloudflare, Supabase, GitHub) | 🟢 GREEN | OK | No taxable foreign service supply |
+| Declare income as Author's Rights, Year 1, under $3,000 | 🟢 GREEN | OK | Correct legal classification; low audit risk |
+| Declare income as Author's Rights, Year 2, under $5,000 | 🟢 GREEN | OK | Still defensible; document everything |
+| Receive MoR payouts to personal Bulgarian bank account | 🟢 GREEN | OK | No legal requirement for business account in Phase 1 |
+| Use a .com domain registered in your personal name | 🟢 GREEN | OK | Domain registration alone does not create tax obligations |
+| Have a public website selling your product | 🟡 AMBER | Gray | Website is evidence of systematic activity; acceptable if income is low |
+| Declare income as Author's Rights, Year 3+, $5,000-$15,000 | 🟡 AMBER | Gray | Increasing НАП challenge risk; consider registering |
+| Use Lemon Squeezy + one paid foreign service (e.g., paid email) | 🟡 AMBER | Gray | Paid service triggers Art. 97a obligation |
+| Receive payouts to a foreign bank account (Wise, Revolut) | 🟡 AMBER | Gray | Legal but may complicate declaration; use BNB rate on receipt date |
+| Not declaring income at all | 🔴 RED | Too Risky | НАП can audit 5 years back; criminal exposure above certain thresholds |
+| Using Stripe directly (you are MoR) without VAT registration | 🔴 RED | Too Risky | You become responsible for EU VAT from first sale |
+| Upgrading to paid Cloudflare/Supabase without Art. 97a registration | 🔴 RED | Too Risky | Clear Art. 97a violation; monthly returns required retroactively |
+| Declaring author's rights income for 5+ years as primary income | 🔴 RED | Too Risky | НАП will reclassify; social security exposure compounds |
+| Operating as natural person with $20,000+/year revenue | 🔴 RED | Too Risky | Scale makes "occasional" classification indefensible |
+
+---
+
+### 16.2 Gaps in the Existing Guide — Addressed Here
+
+#### Gap 1: Appendix 3 vs. Appendix 8 — Which One for MoR Payouts?
+
+**The conflict:** The guide mentions both Appendix 3 (Author's Rights) and Appendix 8 (Foreign Income) for MoR payouts. Which is correct?
+
+**The answer depends on how you frame the relationship:**
+
+**Option A — Appendix 3 (Author's Rights):**
+- You frame the MoR payout as income from licensing your copyrighted software
+- The MoR is just the collection mechanism; the underlying income is author's rights
+- **Argument:** The economic substance is a software license; the MoR is just the payment channel
+- **Risk:** НАП may question why you're using Appendix 3 for income from a foreign company
+
+**Option B — Appendix 8 (Income from Abroad):**
+- You frame the payout as income received from a foreign company (Lemon Squeezy/Paddle)
+- The income is from a foreign source, regardless of its underlying nature
+- **Argument:** The payer is a foreign entity; Appendix 8 is the correct form for foreign-source income
+- **Risk:** Appendix 8 income does not automatically get the 40% author's rights deduction
+
+**The correct approach:**
+- **Use Appendix 3 AND note the foreign source** — the 40% deduction applies to author's rights income regardless of whether the payer is Bulgarian or foreign
+- The key is the **nature of the income** (author's rights), not the **source** (foreign company)
+- Consult your accountant on the specific form layout, but the 40% deduction should be preserved
+
+**Practical documentation:**
+- Keep the Lemon Squeezy/Paddle payout statements showing the underlying product sales
+- These prove the income is from software license sales (author's rights), not from providing services to the MoR
+
+---
+
+#### Gap 2: Bulgarian Customers — Domestic VAT Implications
+
+**The guide focuses on EU/international customers. What about Bulgarian customers?**
+
+**If you sell to a Bulgarian customer:**
+- As a natural person (not VAT registered): no VAT obligation — you are below the Bulgarian VAT registration threshold (100,000 BGN/year for domestic sales)
+- As a self-employed person (not VAT registered): same — no VAT on domestic sales until you hit the 100,000 BGN threshold
+- The EU VAT OSS rules do NOT apply to domestic Bulgarian sales
+
+**The threshold difference:**
+- EU cross-border B2C digital services: €10,000 threshold (EU OSS)
+- Bulgarian domestic sales: 100,000 BGN (~€51,000) threshold
+- **You are far more likely to hit the EU threshold first**
+
+**Practical implication:** Bulgarian customers are not a special problem. Treat them the same as other customers through your MoR.
+
+---
+
+#### Gap 3: Invoice/Receipt Obligations as a Natural Person
+
+**The guide doesn't address whether you need to issue invoices.**
+
+**As a natural person (not registered as self-employed):**
+- You are NOT required to issue VAT invoices (you are not VAT registered)
+- You are NOT required to issue commercial invoices (you are not a trader)
+- The MoR (Lemon Squeezy/Paddle) issues invoices to customers on your behalf
+- **You only need to keep records of income received** (bank statements, MoR payout reports)
+
+**As a self-employed person (Свободна Професия):**
+- You ARE required to issue invoices for services/licenses you provide
+- However, if the MoR is the legal seller, the MoR issues invoices — you issue an invoice to the MoR for your "vendor payout"
+- In practice, many self-employed developers using MoR platforms do not issue formal invoices to the MoR; the payout statement serves as documentation
+- **Consult your accountant** on whether a formal invoice to the MoR is required
+
+---
+
+#### Gap 4: GDPR and Data Protection
+
+**Selling to EU customers means GDPR applies to you.**
+
+**Minimum GDPR obligations for a solo developer:**
+- **Privacy Policy** on your website (required — describes what data you collect and why)
+- **Cookie consent** if you use analytics or tracking cookies
+- **Data Processing Agreement (DPA)** with your MoR (Lemon Squeezy/Paddle provide these)
+- **Right to erasure** — if a customer asks you to delete their data, you must comply
+
+**What data do you actually collect?**
+- Email addresses (for license delivery)
+- Payment data (handled entirely by MoR — you never see card numbers)
+- Usage data (if your licensing system phones home)
+
+**GDPR risk for a solo developer:**
+- Low for small operations
+- The main risk is not having a Privacy Policy
+- Fines are theoretically up to 4% of global annual turnover, but enforcement against small operators is rare
+- **Action:** Add a Privacy Policy page to your website before first sale
+
+**GDPR does NOT affect your tax situation** — it is a separate compliance area.
+
+---
+
+#### Gap 5: The Website and Domain as Evidence
+
+**Does having a professional website hurt your "occasional activity" argument?**
+
+**The honest answer: Yes, somewhat. But it's manageable.**
+
+**What a website signals to НАП:**
+- You have invested time/money in infrastructure → suggests systematic intent
+- You have a checkout flow → suggests commercial activity
+- You have a 14-day trial system → suggests ongoing business operation
+- You have a custom domain → suggests professional/commercial intent
+
+**Counter-arguments:**
+- Many authors have websites to distribute their works (musicians, writers, photographers)
+- Having a website does not automatically make you a "trader" under Bulgarian law
+- The website is the distribution mechanism for a copyrighted work, not evidence of a business
+
+**Practical mitigation:**
+- Do NOT put "business" language on your website in Phase 1 (avoid "company," "enterprise," "business")
+- DO use "author," "creator," "developer" language
+- Keep the website simple — a landing page, not a full e-commerce operation
+- Avoid running paid ads (Google Ads, Facebook Ads) in Phase 1 — this is strong evidence of systematic commercial activity
+
+**Domain registration:**
+- Register the domain in your personal name (not a company name)
+- Use a personal email for domain registration
+- This is consistent with "individual author" framing
+
+---
+
+#### Gap 6: Bank Account Strategy
+
+**Which bank account should you use for MoR payouts?**
+
+**Phase 1 (Natural Person):**
+- **Personal Bulgarian bank account** — completely legal and appropriate
+- MoR payouts to a personal account are normal for individual vendors
+- No requirement for a business account
+- **Recommended:** Use a separate personal account (not your main salary account) to keep income clearly separated for declaration purposes
+
+**Alternative: Wise or Revolut (foreign e-money accounts):**
+- Legal to use
+- Payouts in USD/EUR before converting to BGN
+- **Complication:** You must convert to BGN at the BNB rate on the date of receipt for tax declaration purposes
+- Wise/Revolut provide transaction history — keep this for your records
+- **Risk:** НАП may scrutinize foreign accounts more carefully; not a legal problem but adds complexity
+
+**Phase 2 (Self-Employed):**
+- A dedicated business bank account is strongly recommended (not legally required for Свободна Професия, but practically important)
+- Keeps business and personal finances separate
+- Required if you want to issue formal invoices
+- **Recommended Bulgarian banks for freelancers:** DSK Bank, Fibank, UniCredit — all offer accounts for self-employed persons
+
+**Phase 3 (OOD/Company):**
+- A company bank account is legally required
+- Must be in the company's name
+- Cannot use personal accounts for company transactions
+
+---
+
+#### Gap 7: The Lemon Squeezy / Stripe Acquisition
+
+**Lemon Squeezy was acquired by Stripe in 2024. Does this change the analysis?**
+
+**What changed:**
+- Lemon Squeezy is now a Stripe product
+- The underlying legal entity may have changed
+- Terms of Service may be updated
+
+**What did NOT change:**
+- The MoR model — Lemon Squeezy still acts as the reseller/MoR
+- The commission structure (5% + $0.50)
+- The fundamental legal relationship between vendor and platform
+
+**Practical implication:**
+- Check Lemon Squeezy's current Terms of Service to confirm they still operate as MoR
+- If they have shifted to a "payment facilitator" model (like Stripe itself), the analysis changes — you would become the MoR
+- As of early 2026, Lemon Squeezy continues to operate as MoR
+
+**Paddle as the safer alternative:**
+- Paddle is independent (not acquired by a payment processor)
+- Paddle's MoR model is more explicitly documented
+- Paddle has a longer track record as MoR for software vendors
+- **If uncertain about Lemon Squeezy's post-acquisition status, use Paddle**
+
+---
+
+#### Gap 8: What Happens at the "Free Trial Converts to Paid" Moment?
+
+**When does the tax obligation arise?**
+
+**The rule:** Tax obligation arises when you receive income (cash basis for natural persons in Bulgaria).
+
+**For a 14-day free trial:**
+- During the trial: no income, no tax obligation
+- When the customer pays for a license: income arises on the date of payment
+- The MoR collects payment; you receive a payout (typically monthly or weekly)
+- **Tax obligation arises on the date you receive the payout from the MoR**, not the date the customer paid
+
+**Practical implication:**
+- If a customer pays in December but you receive the MoR payout in January, the income is in January (next tax year)
+- Keep records of payout dates, not customer payment dates
+
+---
+
+#### Gap 9: Bulgarian OOD — The Underanalyzed Option
+
+**The guide mentions OOD briefly but doesn't analyze it as a viable path.**
+
+**What is an OOD (Дружество с ограничена отговорност)?**
+- Bulgarian equivalent of a Limited Liability Company (LLC)
+- Separate legal entity from you personally
+- Limited liability: your personal assets are protected
+
+**Tax treatment of OOD:**
+- Corporate income tax: **10%** (one of the lowest in the EU)
+- Dividend tax when you pay yourself: **5%**
+- Combined effective rate: **14.5%** (10% corporate + 5% dividend on remaining 90%)
+- Compare to self-employed: **10%** income tax + social security (~27.8%)
+
+**When OOD becomes attractive:**
+- Revenue exceeds ~€15,000-20,000/year
+- You want liability protection
+- You want to retain earnings in the company (0% tax on retained earnings until distributed)
+- You want to hire employees or contractors
+
+**OOD setup costs:**
+- Registration: ~500-1,000 BGN (lawyer + state fees)
+- Minimum capital: 2 BGN (yes, two leva)
+- Annual accounting: ~1,500-3,000 BGN/year (mandatory for OOD)
+- Annual financial statement: required, filed with Commercial Register
+
+**OOD and Article 97a:**
+- An OOD is definitively a "taxable person" — Article 97a applies from the first paid foreign service
+- However, an OOD can register for full VAT (not just Art. 97a limited registration) and reclaim input VAT
+- This makes paid foreign services less painful — you pay VAT but get it back
+
+**OOD and MoR:**
+- The OOD signs the vendor agreement with Lemon Squeezy/Paddle
+- Payouts go to the OOD's bank account
+- The OOD declares the income as corporate revenue
+- You pay yourself a salary or dividends
+
+**Verdict:** OOD is the right structure for €15,000+/year. Below that, the accounting costs eat into the tax savings.
+
+---
+
+#### Gap 10: Crypto Payments — Should You Accept Them?
+
+**Some traders prefer crypto. Should you accept it?**
+
+**Short answer: No, not in Phase 1 or 2.**
+
+**Why crypto is problematic:**
+- Crypto income is taxable in Bulgaria (НАП has issued guidance)
+- Each crypto transaction creates a taxable event
+- You must track the BGN value at the time of receipt
+- Crypto-to-fiat conversion is another taxable event
+- No MoR handles crypto payments with the same legal protection as fiat MoRs
+- Significantly increases accounting complexity
+
+**If you want to accept crypto eventually:**
+- Only after registering as self-employed or forming an OOD
+- Use a dedicated crypto accounting tool (Koinly, CoinTracker)
+- Consult a Bulgarian accountant with crypto experience
+- Consider using a crypto payment processor that converts to fiat immediately (BitPay, Coinbase Commerce)
+
+---
+
+### 16.3 The "Easily Defensible" Strategy — Concrete Implementation
+
+This is the strategy that minimizes risk while maximizing simplicity. Every element is chosen for defensibility.
+
+#### Phase 1: The Defensible Gray Zone (Year 1, under $5,000)
+
+**Legal structure:** Natural person (no registration)
+**Payment:** Paddle as MoR (slightly stronger MoR documentation than Lemon Squeezy post-acquisition)
+**Website:** Simple landing page, personal domain, "author" language
+**Bank account:** Separate personal Bulgarian bank account
+**Foreign services:** ALL on free tiers — zero exceptions
+**Income declaration:** Appendix 3 (Author's Rights), 40% deduction, ~6% effective tax
+**Documentation to maintain:**
+- Git commit history showing you are the original author
+- Paddle payout statements (monthly)
+- Simple spreadsheet: date received, amount in USD, BNB rate, amount in BGN
+- Screenshot of your Paddle vendor agreement
+
+**Why this is defensible:**
+- Paddle is the legal seller — you are not collecting payments
+- No paid foreign services — Article 97a cannot be triggered
+- Author's rights is the correct legal classification for software license income
+- You are declaring all income — no evasion argument
+- The 40% deduction is statutory — НАП cannot challenge it
+
+**What to avoid in Phase 1:**
+- ❌ Running paid ads (Google Ads, Facebook Ads, Twitter/X Ads)
+- ❌ Upgrading ANY foreign service to a paid tier
+- ❌ Accepting payments directly (bypassing MoR)
+- ❌ Registering a company name or trademark in Phase 1
+- ❌ Hiring anyone (employees, contractors)
+
+---
+
+#### Phase 2: The Clean Transition (Year 2-3, $5,000-$20,000)
+
+**Trigger for transition:** When you have consistent monthly sales (3+ consecutive months of sales), OR when annual income exceeds $5,000, whichever comes first.
+
+**What changes:**
+1. **Register as self-employed (Свободна Професия)**
+   - Obtain BULSTAT
+   - Register with НАП
+   - Register as self-insured with НОИ
+   - Open a dedicated business bank account
+
+2. **Update your Paddle account** to reflect your BULSTAT number (business registration)
+
+3. **Update your website** — you can now use more professional/business language
+
+4. **Income declaration changes** — from Appendix 3 to Appendix 2 (self-employment income)
+
+5. **Consider upgrading services** — once registered, you can upgrade to paid tiers and register under Article 97a if needed
+
+**What does NOT need to change:**
+- Your domain — keep the same domain
+- Your website — same site, just update the legal footer
+- Your MoR — keep Paddle (or switch to Lemon Squeezy if preferred)
+- Your product — same NinjaTrader indicator
+
+**The transition is invisible to customers** — they see no change.
+
+---
+
+#### Phase 3: The Professional Structure ($20,000+/year)
+
+**Legal structure:** Bulgarian OOD
+**Payment:** Paddle or Lemon Squeezy (MoR agreement in OOD's name)
+**Bank account:** OOD business account
+**VAT:** Register for full VAT (not just Art. 97a) — allows input VAT reclaim
+**Accounting:** Hire a Bulgarian accountant (~150-250 BGN/month)
+
+**What changes from Phase 2:**
+- New legal entity (OOD) — requires new Paddle/Lemon Squeezy vendor account
+- New bank account in OOD's name
+- New domain registration (optional — can keep personal domain, just update legal footer)
+- New Privacy Policy and Terms of Service reflecting the OOD
+
+**What does NOT need to change:**
+- Your website content
+- Your product
+- Your customer relationships
+
+---
+
+### 16.4 The "What Is Really Gray" Classification
+
+#### Genuinely Gray (Defensible but Uncertain)
+
+1. **MoR commission as "not a service received"** — legally sound argument, but no НАП ruling
+2. **Author's rights for Year 2-3 with consistent sales** — correct classification, but "systematic" risk grows
+3. **Using Wise/Revolut for payouts** — legal, but adds complexity and НАП scrutiny
+4. **Appendix 3 vs. Appendix 8 for MoR payouts** — both have arguments; Appendix 3 is more favorable
+
+#### Clearly OK (Green Light)
+
+1. **Paddle/Lemon Squeezy as MoR with zero paid foreign services** — defensible and practical
+2. **Author's rights for Year 1, under $3,000** — correct classification, low audit risk
+3. **Personal bank account for Phase 1 payouts** — completely normal
+4. **Free tier foreign services** — no taxable supply, no Article 97a
+5. **14-day free trial** — standard practice, no tax implications until conversion
+6. **Declaring all income** — always the right move, even if classification is uncertain
+
+#### Too Risky (Red Light)
+
+1. **Not declaring income** — НАП audit risk + criminal exposure above ~5,000 BGN undeclared
+2. **Being your own MoR (Stripe direct) without VAT registration** — EU VAT liability from first sale
+3. **Upgrading to paid foreign services without Art. 97a registration** — clear violation
+4. **Author's rights as primary income for 5+ years** — social security trap + reclassification risk
+5. **Accepting payments to a foreign company you control** — substance requirements, CFC rules
+6. **Crypto payments in Phase 1** — complexity far exceeds benefit
+
+---
+
+## 17. WORST-CASE SCENARIO ANALYSIS
+
+> What actually happens if everything goes wrong? Understanding the worst case helps you calibrate how much risk is acceptable.
+
+---
+
+### 17.1 Scenario: НАП Audits You After 3 Years of Author's Rights Declarations
+
+**Trigger:** НАП receives information about your income (bank reports, Paddle/Lemon Squeezy reporting, or random audit selection).
+
+**НАП's process:**
+1. Issue a notice (Акт за установяване на задължение) requesting documentation
+2. You have 14 days to respond with documentation
+3. НАП reviews your documentation and income classification
+4. If they disagree with your classification, they issue a revised assessment
+
+**Worst case outcome:**
+```
+3 years of income: $15,000 total ($5,000/year)
+Declared as author's rights: $15,000 × 60% × 10% = $900 tax paid
+
+НАП reclassifies as self-employment income:
+Revised tax: $15,000 × 75% × 10% = $1,125
+Additional income tax: $225
+
+Social security (if not insured elsewhere):
+3 years × ~3,120 BGN/year = ~9,360 BGN (~$5,000)
+Interest on social security: ~$1,500
+Fine on social security: ~$500-$2,500
+
+Total worst-case additional cost: ~$7,000-$9,000 on $15,000 of income
+```
+
+**This is painful but not catastrophic.** You would still have kept ~$6,000-$8,000 after all costs.
+
+**Mitigating factors:**
+- If you are employed elsewhere, social security is already covered — the worst case drops to ~$500-$1,000
+- If you cooperate with НАП and pay promptly, fines are typically at the lower end
+- If you have good documentation (git history, license agreements, payout statements), the income tax reclassification is less likely
+
+---
+
+### 17.2 Scenario: Article 97a Violation Discovered
+
+**Trigger:** You accidentally upgraded to a paid Cloudflare plan and forgot to register under Article 97a.
+
+**НАП's process:**
+1. НАП discovers the paid foreign service (typically through bank records or VAT information exchange)
+2. НАП issues a notice of non-registration
+3. You must register retroactively and file all missing monthly returns
+
+**Worst case outcome:**
+```
+1 year of paid Cloudflare ($20/month = $240/year)
+VAT on foreign services received: $240 × 20% = $48 (self-assessed VAT)
+Fine for late registration: 500-5,000 BGN
+Fine for each missing monthly return: 100-500 BGN × 12 = 1,200-6,000 BGN
+Interest on unpaid VAT: minimal (VAT amount is small)
+
+Total worst-case: ~2,000-11,000 BGN (~$1,000-$5,500)
+```
+
+**This is disproportionate to the underlying tax amount.** The fines for non-registration are much larger than the actual VAT owed.
+
+**Key insight:** Article 97a violations are punished more harshly than income tax misclassification. The fines for non-registration are fixed administrative penalties, not proportional to the tax amount.
+
+**Mitigation:** Register under Article 97a BEFORE upgrading any foreign service. The registration itself is free and takes one day.
+
+---
+
+### 17.3 Scenario: You Never Declare Anything
+
+**This is the true worst case.**
+
+**НАП's tools for discovering undeclared income:**
+- Bank account monitoring (НАП has access to Bulgarian bank data)
+- Foreign bank/payment processor reporting (EU DAC7 directive requires platforms to report vendor income)
+- Customs and border control data
+- Anonymous tips
+- Cross-referencing with social media / website presence
+
+**DAC7 — The Game Changer:**
+The EU DAC7 directive (implemented in Bulgaria from 2023) requires digital platforms (including Lemon Squeezy, Paddle, and similar) to report vendor income to tax authorities. This means:
+- Lemon Squeezy/Paddle MUST report your income to Bulgarian tax authorities
+- НАП will know about your income even if you don't declare it
+- **There is no hiding income from MoR platforms**
+
+**Worst case for 3 years of undeclared income ($15,000):**
+```
+Income tax owed: ~$900-$1,125
+Interest (3 years at 10%/year): ~$270-$340
+Administrative fine (intentional evasion): up to 100% of tax = ~$900-$1,125
+Social security (if not insured): ~$5,000
+Criminal threshold: 3,000 BGN (~$1,500) undeclared tax triggers criminal investigation
+
+Total worst case: ~$7,000-$8,000 + potential criminal charges
+```
+
+**Criminal exposure:**
+- Under Bulgarian Criminal Code (НК), tax evasion above 3,000 BGN is a criminal offense
+- Penalty: up to 3 years imprisonment (suspended sentence typical for first offense)
+- Criminal record affects future employment, travel, banking
+
+**This is the scenario to avoid at all costs.** Declaring income — even with an imperfect classification — is always better than not declaring.
+
+---
+
+### 17.4 Scenario: You Use Stripe Directly (No MoR) Without VAT Registration
+
+**What happens:**
+- You are the Merchant of Record
+- You are responsible for EU VAT on all B2C sales to EU customers
+- EU VAT rates vary: 17-27% depending on country
+- You must register for EU VAT OSS (One-Stop Shop) in Bulgaria
+
+**Worst case for $10,000 in EU sales:**
+```
+Average EU VAT rate: ~21%
+VAT owed on EU sales: $10,000 × 21% = $2,100
+Fine for non-registration: 500-5,000 BGN
+Fine for each missing quarterly OSS return: 100-500 BGN × 4 = 400-2,000 BGN
+Interest: ~$630
+
+Total worst case: ~$3,500-$5,000 on $10,000 of sales
+```
+
+**Plus:** Each EU country where you have customers could theoretically audit you separately. In practice, OSS centralizes this, but the theoretical exposure is significant.
+
+**This is why using a MoR is so important.** The MoR absorbs all of this risk for 5% + $0.50 per transaction.
+
+---
+
+### 17.5 Risk-Adjusted Summary
+
+| Scenario | Worst Case Cost | Probability | Expected Cost |
+|---|---|---|---|
+| Author's rights for 3 years, employed elsewhere | ~$500-$1,000 | Low | ~$100 |
+| Author's rights for 3 years, not employed | ~$7,000-$9,000 | Low-Medium | ~$1,500 |
+| Art. 97a violation (one paid service) | ~$1,000-$5,500 | Medium | ~$1,000 |
+| No declaration at all | ~$7,000-$8,000 + criminal | High (DAC7) | ~$5,000 |
+| Stripe direct without VAT registration | ~$3,500-$5,000 | High | ~$3,000 |
+
+**The clear winner:** Declare everything, use a MoR, stay on free tiers. Expected cost: near zero.
+
+---
+
+## 18. TRANSITION PLAYBOOK — Moving from Gray Zone to Registered
+
+> This section gives you the exact steps to transition from Phase 1 (natural person) to Phase 2 (self-employed) without disrupting your business. Every element — website, domain, bank account, MoR account — is covered.
+
+---
+
+### 18.1 When to Trigger the Transition
+
+**Trigger conditions (any one of these):**
+- [ ] 3+ consecutive months of sales (consistent revenue pattern)
+- [ ] Annual income exceeds $5,000 from software sales
+- [ ] You want to upgrade any foreign service to a paid tier
+- [ ] You want to run paid advertising
+- [ ] You want to hire a contractor or employee
+- [ ] You want to open a business bank account for professional credibility
+
+**Do NOT wait for:**
+- A specific revenue threshold (there is none in the law)
+- НАП to contact you
+- Your accountant to tell you to register
+
+---
+
+### 18.2 The Transition Checklist — Step by Step
+
+#### Week 1: Preparation
+
+- [ ] Consult a Bulgarian accountant (one-time, ~200-400 BGN) — get their opinion on your specific situation
+- [ ] Gather all income records from Phase 1 (Paddle/Lemon Squeezy payout statements)
+- [ ] Calculate total Phase 1 income in BGN (using BNB rates)
+- [ ] Confirm you have filed (or will file) your Phase 1 annual tax return correctly
+
+#### Week 2: Registration
+
+- [ ] **Step 1:** Visit Агенция по вписванията (or apply online at brra.bg) — obtain BULSTAT number
+  - Bring: national ID, completed application form (available on brra.bg)
+  - Cost: ~10 BGN
+  - Time: 1-3 business days
+
+- [ ] **Step 2:** Visit local НАП office (or use e-services at nap.bg) — register as self-employed
+  - Bring: BULSTAT certificate, national ID
+  - Declare start date of self-employed activity
+  - Cost: Free
+  - Time: Same day
+
+- [ ] **Step 3:** Submit OKd-5 form to НОИ — register as self-insured
+  - Choose minimum contribution base to start
+  - Cost: Free
+  - Time: 1-2 business days
+
+- [ ] **Step 4:** Open a dedicated business bank account
+  - Any Bulgarian bank
+  - Bring: BULSTAT certificate, national ID, НАП registration certificate
+  - Cost: Varies (typically free or ~10 BGN/month)
+
+#### Week 3: Update Your Business Infrastructure
+
+- [ ] **Update Paddle/Lemon Squeezy account:**
+  - Add your BULSTAT number to your vendor profile
+  - Update payout bank account to your new business account
+  - Update your business address/details
+
+- [ ] **Update your website:**
+  - Add legal footer: "Operated by [Your Name], BULSTAT [number], registered self-employed person"
+  - Update Privacy Policy to reflect your new legal status
+  - Update Terms of Service if you have them
+
+- [ ] **Domain:** No change needed — keep the same domain in your personal name (or transfer to business name if preferred, but not required)
+
+- [ ] **Email:** No change needed — keep the same email
+
+#### Week 4: Ongoing Obligations Setup
+
+- [ ] Set up a system for monthly social security payments (bank standing order by 25th of each month)
+- [ ] Set up a simple accounting spreadsheet or use accounting software (e.g., Bulgarian-compatible: Microinvest, Счетоводна програма)
+- [ ] Schedule annual tax return reminder (April 30 deadline)
+- [ ] Decide whether to register under Article 97a (only if you plan to use paid foreign services)
+
+---
+
+### 18.3 What Customers See During Transition
+
+**Nothing.** The transition is completely invisible to customers:
+- Same website
+- Same domain
+- Same product
+- Same checkout (Paddle/Lemon Squeezy)
+- Same license keys
+- Same support email
+
+The only change is in your legal footer and internal accounting.
+
+---
+
+### 18.4 The Phase 3 Transition (Self-Employed to OOD)
+
+**When to trigger:**
+- Annual revenue exceeds €15,000-20,000 consistently
+- You want liability protection
+- You want to retain earnings in a company
+- You want to hire employees
+
+**What changes:**
+1. **Incorporate OOD** — through a lawyer or online (e-Registrar at brra.bg)
+   - Cost: ~500-1,000 BGN (lawyer fees + state fees)
+   - Time: 3-7 business days
+   - Minimum capital: 2 BGN
+
+2. **Open OOD bank account** — in the company's name
+
+3. **Transfer vendor agreements** — create new Paddle/Lemon Squeezy account in OOD's name
+   - Note: You cannot simply "transfer" an existing account; you create a new one
+   - Old account (personal) can be closed or kept for legacy payouts
+
+4. **Transfer domain** (optional) — can transfer domain to OOD's name, or keep in personal name with a license to the OOD
+
+5. **Update website** — new legal footer with OOD details (company name, UIC number, registered address)
+
+6. **Deregister as self-employed** — once OOD is operational, deregister your Свободна Професия status with НАП
+
+7. **Hire an accountant** — mandatory for OOD; budget ~150-250 BGN/month
+
+**What does NOT change:**
+- Your website content
+- Your product
+- Your customers
+- Your domain (if kept in personal name)
+
+---
+
+### 18.5 The "Clean Slate" Option — If You Want to Start Fresh
+
+**If you have been operating in the gray zone and want to clean up:**
+
+1. **File any missing annual tax returns** — НАП allows voluntary disclosure with reduced penalties
+2. **Pay any outstanding tax** — with interest but without the maximum fine
+3. **Register as self-employed** going forward
+4. **Do NOT try to hide past income** — DAC7 means НАП likely already knows
+
+**Voluntary disclosure process:**
+- Contact НАП directly or through an accountant
+- Declare the income you should have declared
+- Pay the tax + interest
+- НАП typically reduces or waives fines for voluntary disclosure
+- This closes the exposure for past years
+
+---
+
 *Last updated: February 2026. Tax laws change frequently. Verify all figures with current НАП guidelines.*
